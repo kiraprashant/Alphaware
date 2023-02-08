@@ -1,0 +1,122 @@
+.Mycard{
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    height: 100%;
+}
+.Allproduct{
+    margin: 20px 0px;
+}
+
+input{
+ width: 100%;
+ padding: 10px;
+ font-size: 14px;
+ border: 1px solid #dcdcdc;
+ outline: none;
+}
+
+.MyImage_CardTop{
+    width: 80%;
+    height: 250px;
+    margin: auto;
+}
+
+.MyImage_CardTop img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.Mycard_Body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.Product_Name,.Product_Rating{
+    text-align: center;
+    font-size: 14px;
+}
+
+.Product_Name{
+    
+}
+
+.Product_Rating{
+    font-size: 12px;
+}
+
+.Product_Add_To_Cart button{
+    width: 100%;
+    margin-top: auto;
+    background-color: transparent;
+    border:1px solid #6dcaed;
+    padding: 5px;
+    outline: none;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+}
+
+.ProductPrice{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.Original_ProductPrice{
+    color: #9b99a0;
+    text-decoration: line-through;
+}
+
+.Discount_ProductPrice{
+    color: #00b200;
+}
+
+.ProductPrice span{
+    padding: 5px;
+}
+
+.Product_Add_To_Cart button:hover{
+    background-color: #6dcaed;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.MobileCart{
+display: none;
+}
+
+@media only screen and (max-width: 574px) {
+    .MobileCart{
+        font-size:24px;
+        position:fixed;
+        top:250px;
+        z-index:100;
+        right:50px;
+        display: inline-block;
+        padding: 8px 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #636363;
+        transition: all .3s ease-in-out;
+    }
+
+    .MobileCart a{
+        color: #636363;
+        text-decoration: none;
+    }
+
+    .MobileCart:hover{
+        background-color: #64bedb;
+        border: 1px solid #64bedb;
+
+    }
+    .MobileCart a:hover{
+        color: #fff !important;
+       
+    }
+}

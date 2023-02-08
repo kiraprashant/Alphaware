@@ -1,0 +1,101 @@
+.Wrapper_Navbar{
+  width: 100vw;
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  top: 0;
+  height: 80px;
+  /* border-bottom: 1px solid #000; */
+  line-height: 80px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.Navbar ul li{
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.Navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.Navbar ul li a:hover{
+    color: #6dcaed;
+    transition: all .3s linear;
+}
+
+.Navbar .active{
+    font-weight: 600;
+}
+
+.MobileItem{
+    display: none !important;
+}
+
+.MobileNavbar_Wrapper{
+   position: fixed;
+   top: 80px;
+   width: 100%;
+   height: 100vh;
+   z-index: 100;
+   background-color: #fff;
+}
+
+.MobileNavbar{
+    text-align: center;
+
+
+}
+
+.MobileNavbar ul{
+   list-style: none;
+   text-align: center;
+   font-size: 14px;
+   padding: 10px 0px;
+}
+
+.MobileNavbar ul li{
+    padding-bottom: 10px;
+ }
+
+ .MobileNavbar ul li a{
+    color: #000;
+    text-decoration: none;
+ }
+
+ .MobileNavbar ul li a:hover{
+    color: #6dcaed;
+    transition: all .3s linear;
+ }
+
+ .MobileNavbar .active{
+    font-weight: 600;
+ }
+
+@media only screen and (max-width: 574px) {
+      .NavbarImages{
+        width: 70%;
+      }
+      .DesktopItem{
+       display: none !important;
+      }
+      .MobileItem{
+        display: block !important;
+        font-size: 18px;
+        margin-top: -2px;
+        cursor: pointer;
+      }
+  }
